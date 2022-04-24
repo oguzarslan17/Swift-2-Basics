@@ -36,10 +36,37 @@ for language in languages {
 
 var myFavoruteThings = ["makelove", "games", "hanginout", 42] as Any
 
-var numbers = [1,2,5,7,9,8,0,4,3,6]
+var numbers = [1,2,5,7,9,8,0,4,3,6,4,5,6,7,3,5,3,]
 
-print(numbers.sorted())
-print(numbers[0])
-print(numbers[numbers.capacity - 1])
+numbers[0] = -1
+numbers[0]
 print(numbers.sorted())
 print(numbers)
+numbers.last
+numbers.first
+
+//aynı elemandan bir tane olur ve indexleme yapılamaz Set. sırasız bir koleksiyon
+var setList : Set = [1,2,5,6,3,9,8,1,4,8,8]
+print("set list")
+print(setList)
+
+//Dictionary key-value pairing
+
+var dic : Dictionary = ["Oğuz":"Arslan", "Can": "Kaya", "Umut": "Aras"]
+
+dic["Can"]
+dic["Oğuz"]
+dic["Umut"]
+
+dic["Oğuz"] = "Kaya"
+dic["Oğuz"]
+
+dic["Nisa"] = "Nur"
+dic
+
+var dic2 : Dictionary = ["Run" : 100, "Swim" : 150 ]
+dic2
+
+var myList = [["Atil" : 60, "Hikmet" : 45],["Bar" : 2, "Zeynep" : 50]]
+print(myList[1]["Bar"]!)
+
